@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BA86778209F8F65A74FB63E /* libPods-ParseSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DDC9678B8A276D163371E4D /* libPods-ParseSDK.a */; };
 		B6607FF71C036DE100F0A41F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6607FF61C036DE100F0A41F /* AppDelegate.swift */; };
 		B6607FF91C036DE100F0A41F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6607FF81C036DE100F0A41F /* ViewController.swift */; };
 		B6607FFC1C036DE100F0A41F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6607FFA1C036DE100F0A41F /* Main.storyboard */; };
@@ -14,6 +15,8 @@
 		B66080011C036DE100F0A41F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6607FFF1C036DE100F0A41F /* LaunchScreen.storyboard */; };
 		B660800C1C036DE100F0A41F /* ParseSDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B660800B1C036DE100F0A41F /* ParseSDKTests.swift */; };
 		B66080171C036DE100F0A41F /* ParseSDKUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66080161C036DE100F0A41F /* ParseSDKUITests.swift */; };
+		B660802B1C03747200F0A41F /* ObjectiveBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = B660802A1C03747200F0A41F /* ObjectiveBridge.m */; settings = {ASSET_TAGS = (); }; };
+		B660802D1C037A8D00F0A41F /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B660802C1C037A8D00F0A41F /* TableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6D1ED8EAFC11325846349036 /* Pods-ParseSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseSDK/Pods-ParseSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		7DDC9678B8A276D163371E4D /* libPods-ParseSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ParseSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6607FF31C036DE100F0A41F /* ParseSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6607FF61C036DE100F0A41F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6607FF81C036DE100F0A41F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,11 @@
 		B66080121C036DE100F0A41F /* ParseSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ParseSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66080161C036DE100F0A41F /* ParseSDKUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseSDKUITests.swift; sourceTree = "<group>"; };
 		B66080181C036DE100F0A41F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B66080281C03747200F0A41F /* ParseSDK-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ParseSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		B66080291C03747200F0A41F /* ObjectiveBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectiveBridge.h; sourceTree = "<group>"; };
+		B660802A1C03747200F0A41F /* ObjectiveBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveBridge.m; sourceTree = "<group>"; };
+		B660802C1C037A8D00F0A41F /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		BF14CF05E312D5C718E220A5 /* Pods-ParseSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseSDK/Pods-ParseSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA86778209F8F65A74FB63E /* libPods-ParseSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +85,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B685CFFA88A3E6A4BE5EF83 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D1ED8EAFC11325846349036 /* Pods-ParseSDK.debug.xcconfig */,
+				BF14CF05E312D5C718E220A5 /* Pods-ParseSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B6607FEA1C036DE100F0A41F = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +101,8 @@
 				B660800A1C036DE100F0A41F /* ParseSDKTests */,
 				B66080151C036DE100F0A41F /* ParseSDKUITests */,
 				B6607FF41C036DE100F0A41F /* Products */,
+				5B685CFFA88A3E6A4BE5EF83 /* Pods */,
+				C779C724878F5E64C5B35977 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +121,14 @@
 			children = (
 				B6607FF61C036DE100F0A41F /* AppDelegate.swift */,
 				B6607FF81C036DE100F0A41F /* ViewController.swift */,
+				B660802C1C037A8D00F0A41F /* TableViewController.swift */,
 				B6607FFA1C036DE100F0A41F /* Main.storyboard */,
 				B6607FFD1C036DE100F0A41F /* Assets.xcassets */,
 				B6607FFF1C036DE100F0A41F /* LaunchScreen.storyboard */,
 				B66080021C036DE100F0A41F /* Info.plist */,
+				B66080291C03747200F0A41F /* ObjectiveBridge.h */,
+				B660802A1C03747200F0A41F /* ObjectiveBridge.m */,
+				B66080281C03747200F0A41F /* ParseSDK-Bridging-Header.h */,
 			);
 			path = ParseSDK;
 			sourceTree = "<group>";
@@ -125,6 +151,14 @@
 			path = ParseSDKUITests;
 			sourceTree = "<group>";
 		};
+		C779C724878F5E64C5B35977 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7DDC9678B8A276D163371E4D /* libPods-ParseSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +166,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B660801B1C036DE100F0A41F /* Build configuration list for PBXNativeTarget "ParseSDK" */;
 			buildPhases = (
+				D708C93352B14FDFA90F3F31 /* Check Pods Manifest.lock */,
 				B6607FEF1C036DE100F0A41F /* Sources */,
 				B6607FF01C036DE100F0A41F /* Frameworks */,
 				B6607FF11C036DE100F0A41F /* Resources */,
+				D9D64B53284D9C21803FCAE2 /* Embed Pods Frameworks */,
+				958624DE4D25F740E4D73A6E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +224,7 @@
 		B6607FEB1C036DE100F0A41F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = HConnery;
 				TargetAttributes = {
@@ -250,13 +288,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		958624DE4D25F740E4D73A6E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseSDK/Pods-ParseSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D708C93352B14FDFA90F3F31 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D9D64B53284D9C21803FCAE2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseSDK/Pods-ParseSDK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6607FEF1C036DE100F0A41F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				B6607FF91C036DE100F0A41F /* ViewController.swift in Sources */,
+				B660802B1C03747200F0A41F /* ObjectiveBridge.m in Sources */,
 				B6607FF71C036DE100F0A41F /* AppDelegate.swift in Sources */,
+				B660802D1C037A8D00F0A41F /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,23 +484,30 @@
 		};
 		B660801C1C036DE100F0A41F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D1ED8EAFC11325846349036 /* Pods-ParseSDK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ParseSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.ParseSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParseSDK/ParseSDK-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		B660801D1C036DE100F0A41F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF14CF05E312D5C718E220A5 /* Pods-ParseSDK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = ParseSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hconnery.ParseSDK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ParseSDK/ParseSDK-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -483,6 +578,7 @@
 				B660801D1C036DE100F0A41F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B660801E1C036DE100F0A41F /* Build configuration list for PBXNativeTarget "ParseSDKTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +587,7 @@
 				B66080201C036DE100F0A41F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B66080211C036DE100F0A41F /* Build configuration list for PBXNativeTarget "ParseSDKUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +596,7 @@
 				B66080231C036DE100F0A41F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

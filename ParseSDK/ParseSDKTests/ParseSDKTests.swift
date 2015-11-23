@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import ParseSDK
+//@testable import ParseSDK
 
 class ParseSDKTests: XCTestCase {
     

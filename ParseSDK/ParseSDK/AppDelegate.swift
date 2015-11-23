@@ -16,6 +16,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Parse.setApplicationId("TvcfhQ0GnOFQbAfaV9UG51UC1P8B5yQrub6o8ZJ7", clientKey: "QwbWug63JD73ckzWxx9VwWfuItN5AbSRvzp1U0JJ")
+        var tableVC: TableViewController = TableViewController(className: "Cat")
+        tableVC.title = "Crazy Pets"
+        
+        // create a navigation controller
+        var navController : UINavigationController = UINavigationController(rootViewController: tableVC)
+        
+        let frame = UIScreen.mainScreen().bounds
+        window = UIWindow(frame: frame)
+        window?.rootViewController = navController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
